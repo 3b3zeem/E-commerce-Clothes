@@ -7,6 +7,11 @@
   font-family: "Spartan", sans-serif;
 }
 
+:root{
+  --hue-1: 257;
+  --hue-2: 47;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -635,10 +640,31 @@ footer .copyR {
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-  gap: 4rem;
+  gap: 2rem;
   column-gap: 5rem;
   justify-content: center;
   align-content: center;
+  margin-top: 25px;
+}
+
+.filter-btn {
+  display: inline-block;
+  color: hsl(var(--hue-1), 61%, 24%);
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .4px;
+  margin-left: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.filter-btn .mixitup-control-active{
+  color: #088178;
 }
 
 .food-box {
@@ -671,14 +697,6 @@ footer .copyR {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.food-title {
-  line-height: 1;
-  margin: 5px 0 10px 0;
-  font-size: 20px;
-  font-weight: 600;
-  color: #ff6348;
 }
 
 .des {

@@ -48,7 +48,6 @@ function loadContent() {
     updateTotal();
 }
 
-
 //Remove Item
 function removeItem() {
     if (confirm('Are Your Sure to Remove')) {
@@ -134,7 +133,6 @@ function updateTotal() {
 
 
     // Add Product Count in Cart Icon
-
     const cartCount = document.querySelector('.cart-count');
     let count = itemList.length;
     cartCount.innerHTML = count;
@@ -147,6 +145,18 @@ function updateTotal() {
 
 
 }
+
+
+
+let mixer = mixitup(".shop-content", {
+    selectors: {
+        target: ".food-box",
+    },
+    animation: {
+        duration: 500,
+        effects: 'fade scale(0.5)',
+    },
+});
 
 
 if (bar) {
@@ -197,3 +207,5 @@ $(document).ready(function () {
         });
     });
 });
+
+
