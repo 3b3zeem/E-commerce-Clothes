@@ -26,8 +26,56 @@
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="../portifolio/index.html">Portfolio</a></li>
-                <li><a id="lg-bag" href="./cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="https://3b3zeem.github.io/Main-portfolio/">Portfolio</a></li>
+                <li>
+                    <div class="box">
+                        <div class="cart-count">0</div>
+                        <ion-icon name="cart" id="cart-icon"></ion-icon>
+                    </div>
+
+                    <div class="cart">
+                        <div class="cart-title">Cart Items</div>
+                        <div class="cart-content">
+                            <!--
+              <div class="cart-box">
+                <img src="images/97.jpg" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-food-title">Special Dosai</div>
+                  <div class="price-box">
+                    <div class="cart-price">Rs.72</div>
+                     <div class="cart-amt">Rs.72</div>
+                 </div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                <ion-icon name="trash" class="cart-remove"></ion-icon>
+              </div>
+    
+              <div class="cart-box">
+                <img src="images/97.jpg" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-food-title">Special Dosai</div>
+                  <div class="price-box">
+                    <div class="cart-price">Rs.72</div>
+                     <div class="cart-amt">Rs.72</div>
+                 </div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                <ion-icon name="trash" class="cart-remove"></ion-icon>
+              </div>
+            -->
+                        </div>
+
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">Rs.0</div>
+                        </div>
+
+                        <button onclick="Buy()" class="btn-buy">Buy Now!</button>
+
+                        <ion-icon name="close" id="cart-close"></ion-icon>
+
+                    </div>
+                </li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
@@ -43,7 +91,7 @@
     </section>
 
     <section id="product1" class="section-p1">
-        <div class="pro-container">
+        <!-- <div class="pro-container">
             <div class="pro" onclick="window.location.href='./sproduct.html';">
                 <img src="./img/products/f1.jpg">
                 <div class="des">
@@ -300,6 +348,293 @@
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
+        </div> -->
+
+        <div class="container2">
+            <div class="shop-content">
+                <div class="food-box">
+                    <div class="pic">
+                        <img src="./img/products/f1.jpg" class="food-img">
+                    </div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">carton AStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.42</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f2.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carto AStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.52</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f3.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Cart AStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.45</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f4.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Car AStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.55</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f5.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">AStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.65</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f6.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.62</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f7.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.72</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/f8.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton aStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.82</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic">
+                        <img src="./img/products/n1.jpg" class="food-img">
+                    </div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStronau T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.100</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n2.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStronaut T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.90</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n3.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStr T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.80</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n4.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStro T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.70</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n5.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStron T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.50</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n6.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStrona T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.30</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n7.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStronau T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.50</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+
+
+                <div class="food-box">
+                    <div class="pic"><img src="./img/products/n8.jpg" class="food-img"></div>
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5 class="food-title">Carton AStronaut T-Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="food-price">Rs.40</span>
+                    </div>
+                    <ion-icon name="cart" class="add-cart"></ion-icon>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -375,6 +710,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 
 </html>
