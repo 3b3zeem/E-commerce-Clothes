@@ -6,6 +6,20 @@ const btnCart = document.querySelector('#cart-icon');
 const cart = document.querySelector('.cart');
 const btnClose = document.querySelector('#cart-close');
 
+//////open nav in small screens
+if (bar) {
+    bar.addEventListener("click", () => {
+        nav.classList.add("active");
+    });
+}
+
+if (close) {
+    close.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+}
+
+//////open cart in small screens
 btnCart.addEventListener('click', () => {
     cart.classList.add('cart-active');
 });
@@ -14,15 +28,39 @@ btnClose.addEventListener('click', () => {
     cart.classList.remove('cart-active');
 });
 
-document.addEventListener('DOMContentLoaded', loadFood);
+// //////// //////scroll top
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    console.log(scrollValue);
 
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    } else {
+        scrollProgress.style.display = "none";
+    }
+
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+
+    scrollProgress.style.background = `conic-gradient(#088178 ${scrollValue}% , #d7d7d7 ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+///////cart Items
+document.addEventListener('DOMContentLoaded', loadFood);
 function Buy(){
     alert("Your Items are booked!");
 }
-
 function loadFood() {
     loadContent();
-
 }
 
 function loadContent() {
@@ -39,12 +77,10 @@ function loadContent() {
     });
 
     //Product Cart
-
     let cartBtns = document.querySelectorAll('.add-cart');
     cartBtns.forEach((btn) => {
         btn.addEventListener('click', addCart);
     });
-
     updateTotal();
 }
 
@@ -86,7 +122,6 @@ function addCart() {
         itemList.push(newProduct);
     }
 
-
     let newProductElement = createCartProduct(title, price, imgSrc);
     let element = document.createElement('div');
     element.innerHTML = newProductElement;
@@ -95,9 +130,7 @@ function addCart() {
     loadContent();
 }
 
-
 function createCartProduct(title, price, imgSrc) {
-
     return `
   <div class="cart-box">
   <img src="${imgSrc}" class="cart-img">
@@ -142,11 +175,7 @@ function updateTotal() {
     } else {
         cartCount.style.display = 'block';
     }
-
-
 }
-
-
 
 let mixer = mixitup(".shop-content", {
     selectors: {
@@ -158,44 +187,6 @@ let mixer = mixitup(".shop-content", {
     },
 });
 
-
-if (bar) {
-    bar.addEventListener("click", () => {
-        nav.classList.add("active");
-    });
-}
-
-if (close) {
-    close.addEventListener("click", () => {
-        nav.classList.remove("active");
-    });
-}
-
-let calcScrollValue = () => {
-    let scrollProgress = document.getElementById("progress");
-    let progressValue = document.getElementById("progress-value");
-    let pos = document.documentElement.scrollTop;
-    let calcHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100) / calcHeight);
-    console.log(scrollValue);
-
-    if (pos > 100) {
-        scrollProgress.style.display = "grid";
-    } else {
-        scrollProgress.style.display = "none";
-    }
-
-    scrollProgress.addEventListener("click", () => {
-        document.documentElement.scrollTop = 0;
-    });
-
-    scrollProgress.style.background = `conic-gradient(#088178 ${scrollValue}% , #d7d7d7 ${scrollValue}%)`;
-};
-
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
 
 $(document).ready(function () {
     $(".cont").each(function () {
