@@ -56,9 +56,11 @@ window.onload = calcScrollValue;
 
 ///////cart Items
 document.addEventListener('DOMContentLoaded', loadFood);
-function Buy(){
-    alert("Your Items are booked!");
+
+function openTab(){
+    window.open("https://3b3zeem.github.io/payment-gatway/");
 }
+
 function loadFood() {
     loadContent();
 }
